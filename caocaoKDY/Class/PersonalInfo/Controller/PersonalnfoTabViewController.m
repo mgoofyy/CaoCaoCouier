@@ -7,6 +7,7 @@
 //
 
 #import "PersonalnfoTabViewController.h"
+#import "UIView+Extend.h"
 
 @interface PersonalnfoTabViewController ()
 
@@ -16,12 +17,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    [self initView];
+    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {
@@ -29,70 +26,110 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - Table view data source
+#pragma mark -initView
+- (void)initView {
+    self.title = @"个人信息";
+    //设置title颜色
+    NSDictionary * dict=[NSDictionary dictionaryWithObject:[UIColor blackColor] forKey:NSForegroundColorAttributeName];
+    self.navigationController.navigationBar.titleTextAttributes = dict;
+    [self.navigationController.navigationBar setBackgroundColor:[UIColor whiteColor]];
+//    self.navigationController.navigationBar.shadowImage = [UIImage new];
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
-}
-
-/*
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
     
-    // Configure the cell...
+    self.view.backgroundColor = [UIColor colorWithRed:249.0/255.0 green:241.0/255.0 blue:235.0/255.0 alpha:1];
+    [self.tableView setScrollEnabled:YES];
+    [self setExtraCellLineHidden:self.tableView];
+}
+
+#pragma customFunction
+-(void)setExtraCellLineHidden: (UITableView *)tableView
+{
+    UIView *view = [UIView new];
+    view.backgroundColor = [UIColor clearColor];
+    [tableView setTableFooterView:view];
+}
+
+//250 244 239
+
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 2;
+}
+//
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *persondetalcell = [tableView dequeueReusableCellWithIdentifier:@"persondetalcell"];
     
-    return cell;
+    if (!persondetalcell) {
+        persondetalcell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"persondetalcell"];
+    }
+    persondetalcell.accessoryType=UITableViewCellAccessoryDisclosureIndicator;
+    if (indexPath.section == 0) {
+        if (indexPath.row == 0) {
+            persondetalcell.textLabel.text = @"头像";
+            UIImageView *imageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 30, 30)];
+            imageView.layer.cornerRadius = imageView.width/2;
+            imageView.layer.masksToBounds = YES;
+            imageView.image = [UIImage imageNamed:@"touxiang"];
+            persondetalcell.accessoryView = imageView;
+        } else if (indexPath.row == 1) {
+            persondetalcell.textLabel.text = @"昵称";
+            UITextField *te = [[UITextField alloc] initWithFrame:CGRectMake(0, 5, SCRE_WIDTH/2, 40)];
+            te.textAlignment = NSTextAlignmentRight;
+            te.text = @"Goofyy";
+            persondetalcell.accessoryView = te;
+        } else if(indexPath.row == 2) {
+            persondetalcell.textLabel.text = @"性别";
+            UILabel *personalSexLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 100, 40)];
+            personalSexLabel.text = @"请选择";
+            personalSexLabel.textAlignment = NSTextAlignmentRight;
+            persondetalcell.accessoryView = personalSexLabel;
+            
+        } else if (indexPath.row == 3) {
+            persondetalcell.textLabel.text = @"年龄";
+            UILabel *personalAgeLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 100, 40)];
+            personalAgeLabel.text = @"请选择";
+            personalAgeLabel.textAlignment = NSTextAlignmentRight;
+            persondetalcell.accessoryView = personalAgeLabel;
+        }
+    } else if (indexPath.section == 1 ) {
+        
+        if(indexPath.row == 0) {
+            persondetalcell.textLabel.text = @"我的签名";
+            UITextField *te = [[UITextField alloc] initWithFrame:CGRectMake(0, 5, SCRE_WIDTH/2, 40)];
+            te.textAlignment = NSTextAlignmentRight;
+            te.text = @"开心就好";
+            persondetalcell.accessoryView = te;
+        }
+        
+    }
+    
+    
+    return persondetalcell;
 }
-*/
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    int i = 0;
+    if (section == 0) {
+        i = 4;
+    } else if(section == 1) {
+        i = 2;
+    }
+    
+    return i;
 }
-*/
 
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
+-(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    return 10;
 }
-*/
 
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
+-(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    UIView *heightForSectionView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, SCRE_WIDTH, 10)];
+    heightForSectionView.backgroundColor = [UIColor clearColor];
+    return heightForSectionView;
 }
-*/
 
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 50.0;
 }
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
 @end

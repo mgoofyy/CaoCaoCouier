@@ -19,7 +19,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [[UINavigationBar appearance] setBarTintColor:[UIColor clearColor]]; 
+//    [[UINavigationBar appearance] setBarTintColor:[UIColor clearColor]]; 
     self.delegate = self;
     // Do any additional setup after loading the view.
 }

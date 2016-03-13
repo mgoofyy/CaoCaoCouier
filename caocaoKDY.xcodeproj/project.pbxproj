@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		FC45B3E41C95B36700D9DF73 /* test_headImage.png in Resources */ = {isa = PBXBuildFile; fileRef = FC45B3E31C95B36700D9DF73 /* test_headImage.png */; };
 		FC45B3E71C95B45F00D9DF73 /* PersonalnfoTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC45B3E61C95B45F00D9DF73 /* PersonalnfoTabViewController.m */; };
+		FC45B3FF1C95C1F500D9DF73 /* MyWalletViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC45B3FE1C95C1F500D9DF73 /* MyWalletViewController.m */; };
+		FC45B4021C95C20400D9DF73 /* OrderCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC45B4011C95C20400D9DF73 /* OrderCenterViewController.m */; };
+		FC45B4051C95C21B00D9DF73 /* RecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC45B4041C95C21B00D9DF73 /* RecommendViewController.m */; };
+		FC45B4081C95C22900D9DF73 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC45B4071C95C22900D9DF73 /* SettingViewController.m */; };
+		FC45B40B1C95C23600D9DF73 /* TuanMangerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC45B40A1C95C23600D9DF73 /* TuanMangerViewController.m */; };
 		FCEFCDAD1C92C316005B58D9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FCEFCDAC1C92C316005B58D9 /* main.m */; };
 		FCEFCDB01C92C316005B58D9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FCEFCDAF1C92C316005B58D9 /* AppDelegate.m */; };
 		FCEFCDB81C92C316005B58D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCEFCDB71C92C316005B58D9 /* Assets.xcassets */; };
@@ -49,6 +54,16 @@
 		FC45B3E31C95B36700D9DF73 /* test_headImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test_headImage.png; sourceTree = "<group>"; };
 		FC45B3E51C95B45F00D9DF73 /* PersonalnfoTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalnfoTabViewController.h; sourceTree = "<group>"; };
 		FC45B3E61C95B45F00D9DF73 /* PersonalnfoTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalnfoTabViewController.m; sourceTree = "<group>"; };
+		FC45B3FD1C95C1F500D9DF73 /* MyWalletViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyWalletViewController.h; sourceTree = "<group>"; };
+		FC45B3FE1C95C1F500D9DF73 /* MyWalletViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyWalletViewController.m; sourceTree = "<group>"; };
+		FC45B4001C95C20400D9DF73 /* OrderCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderCenterViewController.h; sourceTree = "<group>"; };
+		FC45B4011C95C20400D9DF73 /* OrderCenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderCenterViewController.m; sourceTree = "<group>"; };
+		FC45B4031C95C21B00D9DF73 /* RecommendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommendViewController.h; sourceTree = "<group>"; };
+		FC45B4041C95C21B00D9DF73 /* RecommendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommendViewController.m; sourceTree = "<group>"; };
+		FC45B4061C95C22900D9DF73 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		FC45B4071C95C22900D9DF73 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		FC45B4091C95C23600D9DF73 /* TuanMangerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuanMangerViewController.h; sourceTree = "<group>"; };
+		FC45B40A1C95C23600D9DF73 /* TuanMangerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuanMangerViewController.m; sourceTree = "<group>"; };
 		FCEFCDA81C92C316005B58D9 /* caocaoKDY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = caocaoKDY.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCEFCDAC1C92C316005B58D9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FCEFCDAE1C92C316005B58D9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -74,8 +89,8 @@
 		FCEFCE021C92C5EB005B58D9 /* UIView+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extend.m"; sourceTree = "<group>"; };
 		FCEFCE061C92CB2D005B58D9 /* BasicBGViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicBGViewController.h; sourceTree = "<group>"; };
 		FCEFCE071C92CB2D005B58D9 /* BasicBGViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicBGViewController.m; sourceTree = "<group>"; };
-		FCEFCE091C92D157005B58D9 /* LeftHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftHomeViewController.h; sourceTree = "<group>"; };
-		FCEFCE0A1C92D157005B58D9 /* LeftHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftHomeViewController.m; sourceTree = "<group>"; };
+		FCEFCE091C92D157005B58D9 /* LeftHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LeftHomeViewController.h; path = caocaoKDY/Class/Home/LeftHomeViewController.h; sourceTree = SOURCE_ROOT; };
+		FCEFCE0A1C92D157005B58D9 /* LeftHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LeftHomeViewController.m; path = caocaoKDY/Class/Home/LeftHomeViewController.m; sourceTree = SOURCE_ROOT; };
 		FCEFCE0C1C92D376005B58D9 /* RecentOrdersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecentOrdersViewController.h; sourceTree = "<group>"; };
 		FCEFCE0D1C92D376005B58D9 /* RecentOrdersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecentOrdersViewController.m; sourceTree = "<group>"; };
 		FCEFCE0F1C92D542005B58D9 /* HomeHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeHeaderView.h; sourceTree = "<group>"; };
@@ -108,6 +123,185 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FC45B3E81C95C1D200D9DF73 /* LeftHome */ = {
+			isa = PBXGroup;
+			children = (
+				FCEFCE091C92D157005B58D9 /* LeftHomeViewController.h */,
+				FCEFCE0A1C92D157005B58D9 /* LeftHomeViewController.m */,
+				FC45B3E91C95C1D200D9DF73 /* myWallet */,
+				FC45B3ED1C95C1D200D9DF73 /* OrderCenter */,
+				FC45B3F11C95C1D200D9DF73 /* Recommend */,
+				FC45B3F51C95C1D200D9DF73 /* Setting */,
+				FC45B3F91C95C1D200D9DF73 /* TuanManger */,
+			);
+			path = LeftHome;
+			sourceTree = "<group>";
+		};
+		FC45B3E91C95C1D200D9DF73 /* myWallet */ = {
+			isa = PBXGroup;
+			children = (
+				FC45B3EA1C95C1D200D9DF73 /* Controller */,
+				FC45B3EB1C95C1D200D9DF73 /* Model */,
+				FC45B3EC1C95C1D200D9DF73 /* View */,
+			);
+			path = myWallet;
+			sourceTree = "<group>";
+		};
+		FC45B3EA1C95C1D200D9DF73 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FC45B3FD1C95C1F500D9DF73 /* MyWalletViewController.h */,
+				FC45B3FE1C95C1F500D9DF73 /* MyWalletViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FC45B3EB1C95C1D200D9DF73 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FC45B3EC1C95C1D200D9DF73 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FC45B3ED1C95C1D200D9DF73 /* OrderCenter */ = {
+			isa = PBXGroup;
+			children = (
+				FC45B3EE1C95C1D200D9DF73 /* Controller */,
+				FC45B3EF1C95C1D200D9DF73 /* Model */,
+				FC45B3F01C95C1D200D9DF73 /* View */,
+			);
+			path = OrderCenter;
+			sourceTree = "<group>";
+		};
+		FC45B3EE1C95C1D200D9DF73 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FC45B4001C95C20400D9DF73 /* OrderCenterViewController.h */,
+				FC45B4011C95C20400D9DF73 /* OrderCenterViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FC45B3EF1C95C1D200D9DF73 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FC45B3F01C95C1D200D9DF73 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FC45B3F11C95C1D200D9DF73 /* Recommend */ = {
+			isa = PBXGroup;
+			children = (
+				FC45B3F21C95C1D200D9DF73 /* Controller */,
+				FC45B3F31C95C1D200D9DF73 /* Model */,
+				FC45B3F41C95C1D200D9DF73 /* View */,
+			);
+			path = Recommend;
+			sourceTree = "<group>";
+		};
+		FC45B3F21C95C1D200D9DF73 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FC45B4031C95C21B00D9DF73 /* RecommendViewController.h */,
+				FC45B4041C95C21B00D9DF73 /* RecommendViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FC45B3F31C95C1D200D9DF73 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FC45B3F41C95C1D200D9DF73 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FC45B3F51C95C1D200D9DF73 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				FC45B3F61C95C1D200D9DF73 /* Controller */,
+				FC45B3F71C95C1D200D9DF73 /* Model */,
+				FC45B3F81C95C1D200D9DF73 /* View */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		FC45B3F61C95C1D200D9DF73 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FC45B4061C95C22900D9DF73 /* SettingViewController.h */,
+				FC45B4071C95C22900D9DF73 /* SettingViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FC45B3F71C95C1D200D9DF73 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FC45B3F81C95C1D200D9DF73 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FC45B3F91C95C1D200D9DF73 /* TuanManger */ = {
+			isa = PBXGroup;
+			children = (
+				FC45B3FA1C95C1D200D9DF73 /* Controller */,
+				FC45B3FB1C95C1D200D9DF73 /* Model */,
+				FC45B3FC1C95C1D200D9DF73 /* View */,
+			);
+			path = TuanManger;
+			sourceTree = "<group>";
+		};
+		FC45B3FA1C95C1D200D9DF73 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FC45B4091C95C23600D9DF73 /* TuanMangerViewController.h */,
+				FC45B40A1C95C23600D9DF73 /* TuanMangerViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FC45B3FB1C95C1D200D9DF73 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FC45B3FC1C95C1D200D9DF73 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		FCEFCD9F1C92C316005B58D9 = {
 			isa = PBXGroup;
 			children = (
@@ -229,8 +423,7 @@
 				FCEFCDEA1C92C581005B58D9 /* View */,
 				FCEFCDE81C92C581005B58D9 /* Controller */,
 				FCEFCDE91C92C581005B58D9 /* Model */,
-				FCEFCE091C92D157005B58D9 /* LeftHomeViewController.h */,
-				FCEFCE0A1C92D157005B58D9 /* LeftHomeViewController.m */,
+				FC45B3E81C95C1D200D9DF73 /* LeftHome */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -478,16 +671,21 @@
 			files = (
 				FCEFCDFB1C92C5AD005B58D9 /* GlobalNavigationController.m in Sources */,
 				FCEFCDB01C92C316005B58D9 /* AppDelegate.m in Sources */,
+				FC45B4021C95C20400D9DF73 /* OrderCenterViewController.m in Sources */,
 				FCEFCE0E1C92D376005B58D9 /* RecentOrdersViewController.m in Sources */,
 				FCEFCDAD1C92C316005B58D9 /* main.m in Sources */,
 				FCEFCE051C92C5EB005B58D9 /* UIView+Extend.m in Sources */,
 				FCEFCE081C92CB2D005B58D9 /* BasicBGViewController.m in Sources */,
 				FC45B3E71C95B45F00D9DF73 /* PersonalnfoTabViewController.m in Sources */,
+				FC45B3FF1C95C1F500D9DF73 /* MyWalletViewController.m in Sources */,
 				FCEFCE031C92C5EB005B58D9 /* UIBarButtonItem+GFBarButtonItem.m in Sources */,
 				FCEFCE041C92C5EB005B58D9 /* UIImage+GFImage.m in Sources */,
+				FC45B4051C95C21B00D9DF73 /* RecommendViewController.m in Sources */,
 				FCEFCDF51C92C592005B58D9 /* HomeViewController.m in Sources */,
 				FCEFCE111C92D542005B58D9 /* HomeHeaderView.m in Sources */,
+				FC45B40B1C95C23600D9DF73 /* TuanMangerViewController.m in Sources */,
 				FCEFCE0B1C92D157005B58D9 /* LeftHomeViewController.m in Sources */,
+				FC45B4081C95C22900D9DF73 /* SettingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

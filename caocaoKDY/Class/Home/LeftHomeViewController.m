@@ -9,6 +9,11 @@
 #import "LeftHomeViewController.h"
 #import "GlobalNavigationController.h"
 #import "PersonalnfoTabViewController.h"
+#import "MyWalletViewController.h"
+#import "OrderCenterViewController.h"
+#import "RecommendViewController.h"
+#import "SettingViewController.h"
+#import "TuanMangerViewController.h"
 #import "UIView+Extend.h"
 
 
@@ -18,7 +23,7 @@
  */
 @property (nonatomic,strong) UITableView *menuListTableView;
 
-@property (nonatomic,strong) NSMutableArray *controllArr;
+@property (nonatomic,strong) NSArray *controllArr;
 /**
  *  头像View
  */
@@ -65,12 +70,11 @@
 {
     if (!_controllArr) {
         _controllArr  = @[
-//                          [[MyWalletViewController alloc]init],
-//                          [[MyOrdersViewController alloc]init],
-//                          [[MessageViewController alloc]init],
-//                          [[RecommendViewController alloc]init],
-//                          [[OftenAdressViewController alloc]init],
-//                          [[SettingTabViewController alloc]init],
+                          [[MyWalletViewController alloc]init],
+                          [[OrderCenterViewController alloc]init],
+                          [[TuanMangerViewController alloc]init],
+                          [[RecommendViewController alloc]init],
+                          [[SettingViewController alloc]init],
                           ];
     }
     return _controllArr;
@@ -144,8 +148,12 @@
 #pragma mark initView
 - (void)initView {
     self.title = @"个人中心";
+    //设置title颜色
+    NSDictionary * dict=[NSDictionary dictionaryWithObject:[UIColor whiteColor] forKey:NSForegroundColorAttributeName];
+    self.navigationController.navigationBar.titleTextAttributes = dict;
     [self.view addSubview:self.menuListTableView];
     self.menuListTableView.tableHeaderView = self.headView;
+    
     
 }
 
@@ -200,7 +208,7 @@
             Leftcell.textLabel.text = @"设置";
             Leftcell.imageView.image = [UIImage imageNamed:@"leftHome_usual_address"];
         }
-    UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 5, SCRE_WIDTH - 22, 40)];
+    UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 6, SCRE_WIDTH - 22, 43)];
     view.backgroundColor = [UIColor colorWithWhite:1.0 alpha:0.05f];
     view.layer.cornerRadius = 5;
     view.layer.masksToBounds = YES;
@@ -214,7 +222,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"___________%s",__func__);
+    [self.navigationController pushViewController:(UIViewController *)self.controllArr[indexPath.row] animated:YES];
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {

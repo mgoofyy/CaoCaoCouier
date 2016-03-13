@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC45B3E41C95B36700D9DF73 /* test_headImage.png in Resources */ = {isa = PBXBuildFile; fileRef = FC45B3E31C95B36700D9DF73 /* test_headImage.png */; };
+		FC45B3E71C95B45F00D9DF73 /* PersonalnfoTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC45B3E61C95B45F00D9DF73 /* PersonalnfoTabViewController.m */; };
 		FCEFCDAD1C92C316005B58D9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FCEFCDAC1C92C316005B58D9 /* main.m */; };
 		FCEFCDB01C92C316005B58D9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FCEFCDAF1C92C316005B58D9 /* AppDelegate.m */; };
 		FCEFCDB81C92C316005B58D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCEFCDB71C92C316005B58D9 /* Assets.xcassets */; };
@@ -21,6 +23,8 @@
 		FCEFCE081C92CB2D005B58D9 /* BasicBGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCEFCE071C92CB2D005B58D9 /* BasicBGViewController.m */; };
 		FCEFCE0B1C92D157005B58D9 /* LeftHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCEFCE0A1C92D157005B58D9 /* LeftHomeViewController.m */; };
 		FCEFCE0E1C92D376005B58D9 /* RecentOrdersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCEFCE0D1C92D376005B58D9 /* RecentOrdersViewController.m */; };
+		FCEFCE111C92D542005B58D9 /* HomeHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = FCEFCE101C92D542005B58D9 /* HomeHeaderView.m */; };
+		FCEFCE131C92D553005B58D9 /* HomeHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCEFCE121C92D553005B58D9 /* HomeHeaderView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +45,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FC35A1301C95560A00EAB0BE /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		FC45B3E31C95B36700D9DF73 /* test_headImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test_headImage.png; sourceTree = "<group>"; };
+		FC45B3E51C95B45F00D9DF73 /* PersonalnfoTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalnfoTabViewController.h; sourceTree = "<group>"; };
+		FC45B3E61C95B45F00D9DF73 /* PersonalnfoTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalnfoTabViewController.m; sourceTree = "<group>"; };
 		FCEFCDA81C92C316005B58D9 /* caocaoKDY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = caocaoKDY.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCEFCDAC1C92C316005B58D9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FCEFCDAE1C92C316005B58D9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -70,6 +78,9 @@
 		FCEFCE0A1C92D157005B58D9 /* LeftHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftHomeViewController.m; sourceTree = "<group>"; };
 		FCEFCE0C1C92D376005B58D9 /* RecentOrdersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecentOrdersViewController.h; sourceTree = "<group>"; };
 		FCEFCE0D1C92D376005B58D9 /* RecentOrdersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecentOrdersViewController.m; sourceTree = "<group>"; };
+		FCEFCE0F1C92D542005B58D9 /* HomeHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeHeaderView.h; sourceTree = "<group>"; };
+		FCEFCE101C92D542005B58D9 /* HomeHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeHeaderView.m; sourceTree = "<group>"; };
+		FCEFCE121C92D553005B58D9 /* HomeHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeHeaderView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,7 +142,9 @@
 			children = (
 				FCEFCDAE1C92C316005B58D9 /* AppDelegate.h */,
 				FCEFCDAF1C92C316005B58D9 /* AppDelegate.m */,
+				FC35A1301C95560A00EAB0BE /* PrefixHeader.pch */,
 				FCEFCDB71C92C316005B58D9 /* Assets.xcassets */,
+				FC45B3E31C95B36700D9DF73 /* test_headImage.png */,
 				FCEFCDB91C92C316005B58D9 /* LaunchScreen.storyboard */,
 				FCEFCDBC1C92C316005B58D9 /* Info.plist */,
 				FCEFCDAC1C92C316005B58D9 /* main.m */,
@@ -245,6 +258,9 @@
 		FCEFCDEA1C92C581005B58D9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FCEFCE0F1C92D542005B58D9 /* HomeHeaderView.h */,
+				FCEFCE101C92D542005B58D9 /* HomeHeaderView.m */,
+				FCEFCE121C92D553005B58D9 /* HomeHeaderView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -293,6 +309,8 @@
 		FCEFCDF01C92C581005B58D9 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				FC45B3E51C95B45F00D9DF73 /* PersonalnfoTabViewController.h */,
+				FC45B3E61C95B45F00D9DF73 /* PersonalnfoTabViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -431,7 +449,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FCEFCDBB1C92C316005B58D9 /* LaunchScreen.storyboard in Resources */,
+				FC45B3E41C95B36700D9DF73 /* test_headImage.png in Resources */,
 				FCEFCDB81C92C316005B58D9 /* Assets.xcassets in Resources */,
+				FCEFCE131C92D553005B58D9 /* HomeHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,9 +482,11 @@
 				FCEFCDAD1C92C316005B58D9 /* main.m in Sources */,
 				FCEFCE051C92C5EB005B58D9 /* UIView+Extend.m in Sources */,
 				FCEFCE081C92CB2D005B58D9 /* BasicBGViewController.m in Sources */,
+				FC45B3E71C95B45F00D9DF73 /* PersonalnfoTabViewController.m in Sources */,
 				FCEFCE031C92C5EB005B58D9 /* UIBarButtonItem+GFBarButtonItem.m in Sources */,
 				FCEFCE041C92C5EB005B58D9 /* UIImage+GFImage.m in Sources */,
 				FCEFCDF51C92C592005B58D9 /* HomeViewController.m in Sources */,
+				FCEFCE111C92D542005B58D9 /* HomeHeaderView.m in Sources */,
 				FCEFCE0B1C92D157005B58D9 /* LeftHomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -596,6 +618,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT)/PrefixHeader.pch";
 				INFOPLIST_FILE = caocaoKDY/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -608,6 +631,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT)/PrefixHeader.pch";
 				INFOPLIST_FILE = caocaoKDY/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

@@ -1,5 +1,5 @@
 //
-//  RecentOrdersViewController.h
+//  HomeHeaderView.h
 //  caocaoKDY
 //
 //  Created by goofygao on 16/3/11.
@@ -7,8 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "BasicBGViewController.h"
 
-@interface RecentOrdersViewController : BasicBGViewController
+@interface HomeHeaderView : UIView
 
 @end

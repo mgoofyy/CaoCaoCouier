@@ -8,7 +8,11 @@
 
 #import "OrderRunnigViewController.h"
 #import "RunningOrderInfoView.h"
+#import "LBXScanView.h"
+#import "LBXScanResult.h"
+#import "LBXScanWrapper.h"
 #import "UIView+Extend.h"
+#import "ScanBarCodeViewController.h"
 
 @interface OrderRunnigViewController ()
 /**
@@ -114,6 +118,7 @@
     
     UIButton *scanExpressNumber = [[UIButton alloc]initWithFrame:CGRectMake(60, CGRectGetMaxY(bottomView.frame) + 10, SCRE_WIDTH - 120, 40)];
     [scanExpressNumber setImage:[UIImage imageNamed:@"running_scan_button"] forState:UIControlStateNormal];
+    [scanExpressNumber addTarget:self action:@selector(scanExpressAction) forControlEvents:UIControlEventTouchDown];
     scanExpressNumber.layer.borderColor = [UIColor orangeColor].CGColor;
     scanExpressNumber.layer.borderWidth = 1;
     scanExpressNumber.layer.cornerRadius= 5;
@@ -158,4 +163,58 @@
 - (void)submitAction {
     
 }
+
+- (void)scanExpressAction {
+    [self notSquare];
+}
+
+#pragma mark - custom function
+- (void)notSquare
+{
+    //设置扫码区域参数
+    LBXScanViewStyle *style = [[LBXScanViewStyle alloc]init];
+    style.centerUpOffset = 44;
+    style.photoframeAngleStyle = LBXScanViewPhotoframeAngleStyle_Inner;
+    style.photoframeLineW = 4;
+    style.photoframeAngleW = 28;
+    style.photoframeAngleH = 16;
+    style.isNeedShowRetangle = NO;
+    
+    style.anmiationStyle = LBXScanViewAnimationStyle_LineStill;
+    
+    
+    style.animationImage = [self createImageWithColor:[UIColor redColor]];
+    //非正方形
+    //设置矩形宽高比
+    style.whRatio = 4.3/2.18;
+    
+    //离左边和右边距离
+    style.xScanRetangleOffset = 30;
+
+    [self openScanVCWithStyle:style];
+}
+
+
+- (UIImage*) createImageWithColor: (UIColor*) color
+{
+    CGRect rect=CGRectMake(0.0f, 0.0f, 1.0f, 1.0f);
+    UIGraphicsBeginImageContext(rect.size);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGContextSetFillColorWithColor(context, [color CGColor]);
+    CGContextFillRect(context, rect);
+    UIImage *theImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return theImage;
+}
+
+
+- (void)openScanVCWithStyle:(LBXScanViewStyle*)style
+{
+    ScanBarCodeViewController *vc = [ScanBarCodeViewController new];
+    vc.style = style;
+    //vc.isOpenInterestRect = YES;
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+
 @end

@@ -187,26 +187,26 @@
     Leftcell.textLabel.textColor = [UIColor whiteColor];
         if (indexPath.row == 0) {
             Leftcell.textLabel.text = @"我的钱包";
-            Leftcell.imageView.image = [UIImage imageNamed:@"leftHome_wallet"];
+            Leftcell.imageView.image = [UIImage imageNamed:@"left_home_wallet"];
             
         }else if (indexPath.row == 1)
         {
             Leftcell.textLabel.text = @"订单中心";
-            Leftcell.imageView.image = [UIImage imageNamed:@"leftHome_orders"];
+            Leftcell.imageView.image = [UIImage imageNamed:@"left_home_orders"];
         } else if (indexPath.row == 2)
         {
             Leftcell.textLabel.text = @"团购管理";
-            Leftcell.imageView.image = [UIImage imageNamed:@"leftHome_message"];
+            Leftcell.imageView.image = [UIImage imageNamed:@"left_home_tuan_buy"];
         }
     
         else if (indexPath.row == 3)
         {
             Leftcell.textLabel.text = @"推荐有奖";
-            Leftcell.imageView.image = [UIImage imageNamed:@"leftHome_recommend"];
+            Leftcell.imageView.image = [UIImage imageNamed:@"left_home_recommend"];
         }else if (indexPath.row == 4)
         {
             Leftcell.textLabel.text = @"设置";
-            Leftcell.imageView.image = [UIImage imageNamed:@"leftHome_usual_address"];
+            Leftcell.imageView.image = [UIImage imageNamed:@"left_home_setting"];
         }
     UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 6, SCRE_WIDTH - 22, 43)];
     view.backgroundColor = [UIColor colorWithWhite:1.0 alpha:0.05f];

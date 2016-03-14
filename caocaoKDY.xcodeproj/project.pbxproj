@@ -14,6 +14,13 @@
 		FC45B4051C95C21B00D9DF73 /* RecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC45B4041C95C21B00D9DF73 /* RecommendViewController.m */; };
 		FC45B4081C95C22900D9DF73 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC45B4071C95C22900D9DF73 /* SettingViewController.m */; };
 		FC45B40B1C95C23600D9DF73 /* TuanMangerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC45B40A1C95C23600D9DF73 /* TuanMangerViewController.m */; };
+		FCAE59A61C964EA200336E4F /* RealTimeOrderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FCAE59A41C964EA200336E4F /* RealTimeOrderTableViewCell.m */; };
+		FCAE59A71C964EA200336E4F /* RealTimeOrderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCAE59A51C964EA200336E4F /* RealTimeOrderTableViewCell.xib */; };
+		FCAE59AB1C9670B600336E4F /* RecentOrdersTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FCAE59A91C9670B600336E4F /* RecentOrdersTableViewCell.m */; };
+		FCAE59AC1C9670B600336E4F /* RecentOrdersTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCAE59AA1C9670B600336E4F /* RecentOrdersTableViewCell.xib */; };
+		FCAE59AF1C9682DB00336E4F /* OrderRunnigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCAE59AE1C9682DB00336E4F /* OrderRunnigViewController.m */; };
+		FCAE59B51C968B4700336E4F /* RunningOrderInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = FCAE59B41C968B4700336E4F /* RunningOrderInfoView.m */; };
+		FCAE59B71C968B4F00336E4F /* RunningOrderInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCAE59B61C968B4F00336E4F /* RunningOrderInfoView.xib */; };
 		FCEFCDAD1C92C316005B58D9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FCEFCDAC1C92C316005B58D9 /* main.m */; };
 		FCEFCDB01C92C316005B58D9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FCEFCDAF1C92C316005B58D9 /* AppDelegate.m */; };
 		FCEFCDB81C92C316005B58D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCEFCDB71C92C316005B58D9 /* Assets.xcassets */; };
@@ -64,6 +71,17 @@
 		FC45B4071C95C22900D9DF73 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
 		FC45B4091C95C23600D9DF73 /* TuanMangerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuanMangerViewController.h; sourceTree = "<group>"; };
 		FC45B40A1C95C23600D9DF73 /* TuanMangerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuanMangerViewController.m; sourceTree = "<group>"; };
+		FCAE59A31C964EA200336E4F /* RealTimeOrderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RealTimeOrderTableViewCell.h; path = ../LeftHome/View/RealTimeOrderTableViewCell.h; sourceTree = "<group>"; };
+		FCAE59A41C964EA200336E4F /* RealTimeOrderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RealTimeOrderTableViewCell.m; path = ../LeftHome/View/RealTimeOrderTableViewCell.m; sourceTree = "<group>"; };
+		FCAE59A51C964EA200336E4F /* RealTimeOrderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RealTimeOrderTableViewCell.xib; path = ../LeftHome/View/RealTimeOrderTableViewCell.xib; sourceTree = "<group>"; };
+		FCAE59A81C9670B600336E4F /* RecentOrdersTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecentOrdersTableViewCell.h; sourceTree = "<group>"; };
+		FCAE59A91C9670B600336E4F /* RecentOrdersTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecentOrdersTableViewCell.m; sourceTree = "<group>"; };
+		FCAE59AA1C9670B600336E4F /* RecentOrdersTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecentOrdersTableViewCell.xib; sourceTree = "<group>"; };
+		FCAE59AD1C9682DB00336E4F /* OrderRunnigViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderRunnigViewController.h; sourceTree = "<group>"; };
+		FCAE59AE1C9682DB00336E4F /* OrderRunnigViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderRunnigViewController.m; sourceTree = "<group>"; };
+		FCAE59B31C968B4700336E4F /* RunningOrderInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunningOrderInfoView.h; sourceTree = "<group>"; };
+		FCAE59B41C968B4700336E4F /* RunningOrderInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunningOrderInfoView.m; sourceTree = "<group>"; };
+		FCAE59B61C968B4F00336E4F /* RunningOrderInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RunningOrderInfoView.xib; sourceTree = "<group>"; };
 		FCEFCDA81C92C316005B58D9 /* caocaoKDY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = caocaoKDY.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCEFCDAC1C92C316005B58D9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FCEFCDAE1C92C316005B58D9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -126,6 +144,7 @@
 		FC45B3E81C95C1D200D9DF73 /* LeftHome */ = {
 			isa = PBXGroup;
 			children = (
+				FCAE599F1C964E5600336E4F /* View */,
 				FCEFCE091C92D157005B58D9 /* LeftHomeViewController.h */,
 				FCEFCE0A1C92D157005B58D9 /* LeftHomeViewController.m */,
 				FC45B3E91C95C1D200D9DF73 /* myWallet */,
@@ -302,6 +321,13 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		FCAE599F1C964E5600336E4F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		FCEFCD9F1C92C316005B58D9 = {
 			isa = PBXGroup;
 			children = (
@@ -435,6 +461,8 @@
 				FCEFCE071C92CB2D005B58D9 /* BasicBGViewController.m */,
 				FCEFCDF31C92C592005B58D9 /* HomeViewController.h */,
 				FCEFCDF41C92C592005B58D9 /* HomeViewController.m */,
+				FCAE59AD1C9682DB00336E4F /* OrderRunnigViewController.h */,
+				FCAE59AE1C9682DB00336E4F /* OrderRunnigViewController.m */,
 				FCEFCE0C1C92D376005B58D9 /* RecentOrdersViewController.h */,
 				FCEFCE0D1C92D376005B58D9 /* RecentOrdersViewController.m */,
 			);
@@ -451,9 +479,18 @@
 		FCEFCDEA1C92C581005B58D9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FCAE59A31C964EA200336E4F /* RealTimeOrderTableViewCell.h */,
+				FCAE59A41C964EA200336E4F /* RealTimeOrderTableViewCell.m */,
+				FCAE59A51C964EA200336E4F /* RealTimeOrderTableViewCell.xib */,
 				FCEFCE0F1C92D542005B58D9 /* HomeHeaderView.h */,
 				FCEFCE101C92D542005B58D9 /* HomeHeaderView.m */,
 				FCEFCE121C92D553005B58D9 /* HomeHeaderView.xib */,
+				FCAE59A81C9670B600336E4F /* RecentOrdersTableViewCell.h */,
+				FCAE59A91C9670B600336E4F /* RecentOrdersTableViewCell.m */,
+				FCAE59AA1C9670B600336E4F /* RecentOrdersTableViewCell.xib */,
+				FCAE59B31C968B4700336E4F /* RunningOrderInfoView.h */,
+				FCAE59B41C968B4700336E4F /* RunningOrderInfoView.m */,
+				FCAE59B61C968B4F00336E4F /* RunningOrderInfoView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -644,7 +681,10 @@
 				FCEFCDBB1C92C316005B58D9 /* LaunchScreen.storyboard in Resources */,
 				FC45B3E41C95B36700D9DF73 /* test_headImage.png in Resources */,
 				FCEFCDB81C92C316005B58D9 /* Assets.xcassets in Resources */,
+				FCAE59AC1C9670B600336E4F /* RecentOrdersTableViewCell.xib in Resources */,
+				FCAE59A71C964EA200336E4F /* RealTimeOrderTableViewCell.xib in Resources */,
 				FCEFCE131C92D553005B58D9 /* HomeHeaderView.xib in Resources */,
+				FCAE59B71C968B4F00336E4F /* RunningOrderInfoView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -673,10 +713,14 @@
 				FCEFCDB01C92C316005B58D9 /* AppDelegate.m in Sources */,
 				FC45B4021C95C20400D9DF73 /* OrderCenterViewController.m in Sources */,
 				FCEFCE0E1C92D376005B58D9 /* RecentOrdersViewController.m in Sources */,
+				FCAE59AF1C9682DB00336E4F /* OrderRunnigViewController.m in Sources */,
 				FCEFCDAD1C92C316005B58D9 /* main.m in Sources */,
+				FCAE59B51C968B4700336E4F /* RunningOrderInfoView.m in Sources */,
+				FCAE59A61C964EA200336E4F /* RealTimeOrderTableViewCell.m in Sources */,
 				FCEFCE051C92C5EB005B58D9 /* UIView+Extend.m in Sources */,
 				FCEFCE081C92CB2D005B58D9 /* BasicBGViewController.m in Sources */,
 				FC45B3E71C95B45F00D9DF73 /* PersonalnfoTabViewController.m in Sources */,
+				FCAE59AB1C9670B600336E4F /* RecentOrdersTableViewCell.m in Sources */,
 				FC45B3FF1C95C1F500D9DF73 /* MyWalletViewController.m in Sources */,
 				FCEFCE031C92C5EB005B58D9 /* UIBarButtonItem+GFBarButtonItem.m in Sources */,
 				FCEFCE041C92C5EB005B58D9 /* UIImage+GFImage.m in Sources */,

@@ -8,6 +8,7 @@
 
 #import "OrderCenterViewController.h"
 #import "RecentOrdersTableViewCell.h"
+#import "OrdersDetailViewController.h"
 
 @interface OrderCenterViewController ()<UITableViewDataSource,UITableViewDelegate>
 
@@ -82,6 +83,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    [self.navigationController pushViewController:[OrdersDetailViewController new] animated:YES];
     NSLog(@"___________%s",__func__);
 }
 

@@ -10,6 +10,9 @@
 		FC113AC41C979AF0007BA298 /* TuanDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC113AC31C979AF0007BA298 /* TuanDetailViewController.m */; };
 		FC113AD61C97C268007BA298 /* TuanDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = FC113AD41C97C267007BA298 /* TuanDetail.m */; };
 		FC113AD71C97C268007BA298 /* TuanDetail.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC113AD51C97C268007BA298 /* TuanDetail.xib */; };
+		FC113ADA1C97D315007BA298 /* OrdersDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC113AD91C97D315007BA298 /* OrdersDetailViewController.m */; };
+		FC113ADE1C97D8DC007BA298 /* ExpressNumberTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FC113ADC1C97D8DC007BA298 /* ExpressNumberTableViewCell.m */; };
+		FC113ADF1C97D8DC007BA298 /* ExpressNumberTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC113ADD1C97D8DC007BA298 /* ExpressNumberTableViewCell.xib */; };
 		FC45B3E41C95B36700D9DF73 /* test_headImage.png in Resources */ = {isa = PBXBuildFile; fileRef = FC45B3E31C95B36700D9DF73 /* test_headImage.png */; };
 		FC45B3E71C95B45F00D9DF73 /* PersonalnfoTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC45B3E61C95B45F00D9DF73 /* PersonalnfoTabViewController.m */; };
 		FC45B3FF1C95C1F500D9DF73 /* MyWalletViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC45B3FE1C95C1F500D9DF73 /* MyWalletViewController.m */; };
@@ -302,6 +305,11 @@
 		FC113AD31C97C267007BA298 /* TuanDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuanDetail.h; sourceTree = "<group>"; };
 		FC113AD41C97C267007BA298 /* TuanDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuanDetail.m; sourceTree = "<group>"; };
 		FC113AD51C97C268007BA298 /* TuanDetail.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TuanDetail.xib; sourceTree = "<group>"; };
+		FC113AD81C97D315007BA298 /* OrdersDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrdersDetailViewController.h; sourceTree = "<group>"; };
+		FC113AD91C97D315007BA298 /* OrdersDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrdersDetailViewController.m; sourceTree = "<group>"; };
+		FC113ADB1C97D8DC007BA298 /* ExpressNumberTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpressNumberTableViewCell.h; sourceTree = "<group>"; };
+		FC113ADC1C97D8DC007BA298 /* ExpressNumberTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExpressNumberTableViewCell.m; sourceTree = "<group>"; };
+		FC113ADD1C97D8DC007BA298 /* ExpressNumberTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExpressNumberTableViewCell.xib; sourceTree = "<group>"; };
 		FC35A1301C95560A00EAB0BE /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		FC45B3E31C95B36700D9DF73 /* test_headImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test_headImage.png; sourceTree = "<group>"; };
 		FC45B3E51C95B45F00D9DF73 /* PersonalnfoTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalnfoTabViewController.h; sourceTree = "<group>"; };
@@ -940,6 +948,8 @@
 			children = (
 				FC45B4001C95C20400D9DF73 /* OrderCenterViewController.h */,
 				FC45B4011C95C20400D9DF73 /* OrderCenterViewController.m */,
+				FC113AD81C97D315007BA298 /* OrdersDetailViewController.h */,
+				FC113AD91C97D315007BA298 /* OrdersDetailViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -954,6 +964,9 @@
 		FC45B3F01C95C1D200D9DF73 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FC113ADB1C97D8DC007BA298 /* ExpressNumberTableViewCell.h */,
+				FC113ADC1C97D8DC007BA298 /* ExpressNumberTableViewCell.m */,
+				FC113ADD1C97D8DC007BA298 /* ExpressNumberTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -2197,6 +2210,7 @@
 				FCEFCDB81C92C316005B58D9 /* Assets.xcassets in Resources */,
 				FCAE59AC1C9670B600336E4F /* RecentOrdersTableViewCell.xib in Resources */,
 				FCAE59A71C964EA200336E4F /* RealTimeOrderTableViewCell.xib in Resources */,
+				FC113ADF1C97D8DC007BA298 /* ExpressNumberTableViewCell.xib in Resources */,
 				FCEFCE131C92D553005B58D9 /* HomeHeaderView.xib in Resources */,
 				FCAE59B71C968B4F00336E4F /* RunningOrderInfoView.xib in Resources */,
 			);
@@ -2383,6 +2397,7 @@
 				FCAE5C4D1C96A79000336E4F /* ZXPDF417BarcodeValue.m in Sources */,
 				FCAE5BCC1C96A79000336E4F /* ZXVCardResultParser.m in Sources */,
 				FCAE5BCA1C96A79000336E4F /* ZXURIResultParser.m in Sources */,
+				FC113ADA1C97D315007BA298 /* OrdersDetailViewController.m in Sources */,
 				FCAE5C371C96A79000336E4F /* ZXEAN13Writer.m in Sources */,
 				FCAE5C231C96A79000336E4F /* ZXRSSExpandedFieldParser.m in Sources */,
 				FCAE59AB1C9670B600336E4F /* RecentOrdersTableViewCell.m in Sources */,
@@ -2421,6 +2436,7 @@
 				FCAE5BF21C96A79000336E4F /* ZXInvertedLuminanceSource.m in Sources */,
 				FCAE5BCB1C96A79000336E4F /* ZXURLTOResultParser.m in Sources */,
 				FCAE5C321C96A79000336E4F /* ZXCode128Writer.m in Sources */,
+				FC113ADE1C97D8DC007BA298 /* ExpressNumberTableViewCell.m in Sources */,
 				FCAE5BC61C96A79000336E4F /* ZXTelParsedResult.m in Sources */,
 				FCAE5BBD1C96A79000336E4F /* ZXISBNResultParser.m in Sources */,
 				FCAE5BC91C96A79000336E4F /* ZXURIParsedResult.m in Sources */,

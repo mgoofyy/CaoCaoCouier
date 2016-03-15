@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "HomeViewController.h"
 #import "GlobalNavigationController.h"
+#import "LoginHomeViewController.h"
 
 @interface AppDelegate ()
 
@@ -22,7 +23,7 @@
     
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     
-    HomeViewController *viewConrtoller =  [[HomeViewController alloc]init];
+    LoginHomeViewController *viewConrtoller =  [[LoginHomeViewController alloc]init];
     
     GlobalNavigationController *nav = [[GlobalNavigationController alloc]initWithRootViewController:viewConrtoller];
     

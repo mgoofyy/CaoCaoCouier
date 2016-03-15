@@ -13,6 +13,8 @@
 		FC113ADA1C97D315007BA298 /* OrdersDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC113AD91C97D315007BA298 /* OrdersDetailViewController.m */; };
 		FC113ADE1C97D8DC007BA298 /* ExpressNumberTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FC113ADC1C97D8DC007BA298 /* ExpressNumberTableViewCell.m */; };
 		FC113ADF1C97D8DC007BA298 /* ExpressNumberTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC113ADD1C97D8DC007BA298 /* ExpressNumberTableViewCell.xib */; };
+		FC113AE71C97F505007BA298 /* LoginHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC113AE61C97F505007BA298 /* LoginHomeViewController.m */; };
+		FC113AEA1C9809B5007BA298 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC113AE91C9809B5007BA298 /* SignUpViewController.m */; };
 		FC45B3E41C95B36700D9DF73 /* test_headImage.png in Resources */ = {isa = PBXBuildFile; fileRef = FC45B3E31C95B36700D9DF73 /* test_headImage.png */; };
 		FC45B3E71C95B45F00D9DF73 /* PersonalnfoTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC45B3E61C95B45F00D9DF73 /* PersonalnfoTabViewController.m */; };
 		FC45B3FF1C95C1F500D9DF73 /* MyWalletViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC45B3FE1C95C1F500D9DF73 /* MyWalletViewController.m */; };
@@ -310,6 +312,10 @@
 		FC113ADB1C97D8DC007BA298 /* ExpressNumberTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpressNumberTableViewCell.h; sourceTree = "<group>"; };
 		FC113ADC1C97D8DC007BA298 /* ExpressNumberTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExpressNumberTableViewCell.m; sourceTree = "<group>"; };
 		FC113ADD1C97D8DC007BA298 /* ExpressNumberTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExpressNumberTableViewCell.xib; sourceTree = "<group>"; };
+		FC113AE51C97F505007BA298 /* LoginHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginHomeViewController.h; sourceTree = "<group>"; };
+		FC113AE61C97F505007BA298 /* LoginHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginHomeViewController.m; sourceTree = "<group>"; };
+		FC113AE81C9809B5007BA298 /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
+		FC113AE91C9809B5007BA298 /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
 		FC35A1301C95560A00EAB0BE /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		FC45B3E31C95B36700D9DF73 /* test_headImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test_headImage.png; sourceTree = "<group>"; };
 		FC45B3E51C95B45F00D9DF73 /* PersonalnfoTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalnfoTabViewController.h; sourceTree = "<group>"; };
@@ -885,6 +891,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FC113AE01C97F4DB007BA298 /* Count */ = {
+			isa = PBXGroup;
+			children = (
+				FC113AE11C97F4DB007BA298 /* Login */,
+			);
+			path = Count;
+			sourceTree = "<group>";
+		};
+		FC113AE11C97F4DB007BA298 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				FC113AE21C97F4DB007BA298 /* Controller */,
+				FC113AE31C97F4DB007BA298 /* Model */,
+				FC113AE41C97F4DB007BA298 /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		FC113AE21C97F4DB007BA298 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FC113AE51C97F505007BA298 /* LoginHomeViewController.h */,
+				FC113AE61C97F505007BA298 /* LoginHomeViewController.m */,
+				FC113AE81C9809B5007BA298 /* SignUpViewController.h */,
+				FC113AE91C9809B5007BA298 /* SignUpViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FC113AE31C97F4DB007BA298 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FC113AE41C97F4DB007BA298 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		FC45B3E81C95C1D200D9DF73 /* LeftHome */ = {
 			isa = PBXGroup;
 			children = (
@@ -1909,6 +1958,7 @@
 		FCEFCDE11C92C581005B58D9 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				FC113AE01C97F4DB007BA298 /* Count */,
 				FCEFCDE21C92C581005B58D9 /* FrameWork */,
 				FCEFCDE31C92C581005B58D9 /* Global */,
 				FCEFCDE71C92C581005B58D9 /* Home */,
@@ -2246,6 +2296,7 @@
 				FCEFCDFB1C92C5AD005B58D9 /* GlobalNavigationController.m in Sources */,
 				FCAE5C501C96A79000336E4F /* ZXPDF417CodewordDecoder.m in Sources */,
 				FCAE5C061C96A79000336E4F /* ZXDataMatrixSymbolInfo.m in Sources */,
+				FC113AEA1C9809B5007BA298 /* SignUpViewController.m in Sources */,
 				FCAE5BDA1C96A79000336E4F /* ZXReedSolomonDecoder.m in Sources */,
 				FCAE5C4E1C96A79000336E4F /* ZXPDF417BoundingBox.m in Sources */,
 				FCAE5C451C96A79000336E4F /* ZXUPCEANExtensionSupport.m in Sources */,
@@ -2406,6 +2457,7 @@
 				FCAE5C9F1C96A87C00336E4F /* LBXZXCapture.m in Sources */,
 				FCAE5BD51C96A79000336E4F /* ZXMathUtils.m in Sources */,
 				FCAE5C391C96A79000336E4F /* ZXEAN8Writer.m in Sources */,
+				FC113AE71C97F505007BA298 /* LoginHomeViewController.m in Sources */,
 				FCEFCE031C92C5EB005B58D9 /* UIBarButtonItem+GFBarButtonItem.m in Sources */,
 				FCAE5BF81C96A79000336E4F /* ZXDataMatrixBitMatrixParser.m in Sources */,
 				FCAE5C481C96A79000336E4F /* ZXUPCEReader.m in Sources */,

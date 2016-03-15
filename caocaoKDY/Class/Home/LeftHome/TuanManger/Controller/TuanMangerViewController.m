@@ -8,6 +8,7 @@
 
 #import "TuanMangerViewController.h"
 #import "TuanMangerTableViewCell.h"
+#import "TuanDetailViewController.h"
 
 @interface TuanMangerViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -78,7 +79,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-//    [self.navigationController pushViewController:[OrderRunnigViewController new] animated:YES];
+    [self.navigationController pushViewController:[TuanDetailViewController new] animated:YES];
     NSLog(@"___________%s",__func__);
 }
 

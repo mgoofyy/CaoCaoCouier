@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC113AC41C979AF0007BA298 /* TuanDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC113AC31C979AF0007BA298 /* TuanDetailViewController.m */; };
+		FC113AD61C97C268007BA298 /* TuanDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = FC113AD41C97C267007BA298 /* TuanDetail.m */; };
+		FC113AD71C97C268007BA298 /* TuanDetail.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC113AD51C97C268007BA298 /* TuanDetail.xib */; };
 		FC45B3E41C95B36700D9DF73 /* test_headImage.png in Resources */ = {isa = PBXBuildFile; fileRef = FC45B3E31C95B36700D9DF73 /* test_headImage.png */; };
 		FC45B3E71C95B45F00D9DF73 /* PersonalnfoTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC45B3E61C95B45F00D9DF73 /* PersonalnfoTabViewController.m */; };
 		FC45B3FF1C95C1F500D9DF73 /* MyWalletViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC45B3FE1C95C1F500D9DF73 /* MyWalletViewController.m */; };
@@ -294,6 +297,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FC113AC21C979AF0007BA298 /* TuanDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuanDetailViewController.h; sourceTree = "<group>"; };
+		FC113AC31C979AF0007BA298 /* TuanDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuanDetailViewController.m; sourceTree = "<group>"; };
+		FC113AD31C97C267007BA298 /* TuanDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuanDetail.h; sourceTree = "<group>"; };
+		FC113AD41C97C267007BA298 /* TuanDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuanDetail.m; sourceTree = "<group>"; };
+		FC113AD51C97C268007BA298 /* TuanDetail.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TuanDetail.xib; sourceTree = "<group>"; };
 		FC35A1301C95560A00EAB0BE /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		FC45B3E31C95B36700D9DF73 /* test_headImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test_headImage.png; sourceTree = "<group>"; };
 		FC45B3E51C95B45F00D9DF73 /* PersonalnfoTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalnfoTabViewController.h; sourceTree = "<group>"; };
@@ -1031,6 +1039,8 @@
 			children = (
 				FC45B4091C95C23600D9DF73 /* TuanMangerViewController.h */,
 				FC45B40A1C95C23600D9DF73 /* TuanMangerViewController.m */,
+				FC113AC21C979AF0007BA298 /* TuanDetailViewController.h */,
+				FC113AC31C979AF0007BA298 /* TuanDetailViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1045,6 +1055,9 @@
 		FC45B3FC1C95C1D200D9DF73 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FC113AD31C97C267007BA298 /* TuanDetail.h */,
+				FC113AD41C97C267007BA298 /* TuanDetail.m */,
+				FC113AD51C97C268007BA298 /* TuanDetail.xib */,
 				FCAE5CB31C96BFB400336E4F /* TuanMangerTableViewCell.h */,
 				FCAE5CB41C96BFB400336E4F /* TuanMangerTableViewCell.m */,
 				FCAE5CB51C96BFB400336E4F /* TuanMangerTableViewCell.xib */,
@@ -2180,6 +2193,7 @@
 				FCEFCDBB1C92C316005B58D9 /* LaunchScreen.storyboard in Resources */,
 				FCAE5CB71C96BFB400336E4F /* TuanMangerTableViewCell.xib in Resources */,
 				FC45B3E41C95B36700D9DF73 /* test_headImage.png in Resources */,
+				FC113AD71C97C268007BA298 /* TuanDetail.xib in Resources */,
 				FCEFCDB81C92C316005B58D9 /* Assets.xcassets in Resources */,
 				FCAE59AC1C9670B600336E4F /* RecentOrdersTableViewCell.xib in Resources */,
 				FCAE59A71C964EA200336E4F /* RealTimeOrderTableViewCell.xib in Resources */,
@@ -2297,6 +2311,7 @@
 				FCAE5BB81C96A79000336E4F /* ZXExpandedProductParsedResult.m in Sources */,
 				FCAE5C6F1C96A79000336E4F /* ZXQRCodeFinderPattern.m in Sources */,
 				FCAE5C441C96A79000336E4F /* ZXUPCEANExtension5Support.m in Sources */,
+				FC113AD61C97C268007BA298 /* TuanDetail.m in Sources */,
 				FCAE5BE91C96A79000336E4F /* ZXPerspectiveTransform.m in Sources */,
 				FCAE5BFF1C96A79000336E4F /* ZXDataMatrixBase256Encoder.m in Sources */,
 				FCAE5BCD1C96A79000336E4F /* ZXVEventResultParser.m in Sources */,
@@ -2452,6 +2467,7 @@
 				FCAE5C361C96A79000336E4F /* ZXEAN13Reader.m in Sources */,
 				FCAE5C071C96A79000336E4F /* ZXDataMatrixSymbolInfo144.m in Sources */,
 				FCAE5BD81C96A79000336E4F /* ZXGenericGF.m in Sources */,
+				FC113AC41C979AF0007BA298 /* TuanDetailViewController.m in Sources */,
 				FCAE5C651C96A79000336E4F /* ZXQRCodeDecodedBitStreamParser.m in Sources */,
 				FC45B40B1C95C23600D9DF73 /* TuanMangerViewController.m in Sources */,
 				FCAE5BFD1C96A79000336E4F /* ZXDataMatrixDetector.m in Sources */,

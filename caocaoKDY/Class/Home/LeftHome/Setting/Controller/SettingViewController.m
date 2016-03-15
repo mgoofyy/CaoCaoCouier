@@ -22,9 +22,10 @@
 #pragma mark lazy load 
 -(UITableView *)settingTableView {
     if (!_settingTableView) {
-        _settingTableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 10, SCRE_WIDTH, SCRE_HEIGHT)];
+        _settingTableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, SCRE_WIDTH, 235)];
         _settingTableView.delegate = self;
         _settingTableView.dataSource = self;
+        _settingTableView.scrollEnabled = NO;
         [_settingTableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
         
     }
@@ -67,6 +68,7 @@
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
     cell.textLabel.text = self.itemsArray[indexPath.row];
+    cell.accessoryType=UITableViewCellAccessoryDisclosureIndicator;
     return cell;
 }
 
@@ -80,5 +82,15 @@
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return 40;
+}
+
+-(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    UIView *headerView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, SCRE_WIDTH, 10)];
+    headerView.backgroundColor = [UIColor colorWithRed:249.0/255.0 green:241.0/255.0 blue:235.0/255.0 alpha:1];
+    return headerView;
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    return 10.0;
 }
 @end
